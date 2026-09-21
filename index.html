@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BROMA</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+    header img.logo {
+      max-width: 180px;      
+      height: auto;          
+      display: block;        
+      margin: 0 auto;        
+      margin-bottom: 1.5rem; /* Corregido el espacio para que aplique bien */
+    }
+    header h2 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      align-self: center;
+    }
+    h1 {
+      font-size: 3.5rem;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+    }
+    p.tagline {
+      color: #888;
+      margin-top: 0.5rem;
+      text-align: center;
+    }
+    .h2 {
+      text-align: center;
+    }
+    .container {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      border: 1px solid #333;
+      padding: 1.5rem;
+      border-radius: 4px;
+      background: #141414;
+    }
+    /* Estilo para los flyers dentro de las tarjetas */
+    .card img.flyer {
+      width: 100%;
+      height: auto;
+      border-radius: 2px;
+      margin-bottom: 1rem;
+      display: block;
+    }
+    .card h2 {
+      text-align: left;
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .btn {
+      display: block;                 /* Convierte el botón en bloque para permitir centrado automático */
+      width: fit-content;             /* Ajusta el ancho exactamente al texto de adentro */
+      margin: 1.5rem auto 0 auto;     /* Centra el botón horizontalmente (auto a los lados) */
+      padding: 0.7rem 1.8rem;         /* Relleno cómodo para que luzca alargado como píldora */
+      background: #f5f5f5;
+      color: #000000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 50px;            /* ¡Forma de píldora total en las esquinas! */
+      text-align: center;
+    }
+    .btn:hover {
+      background: #ccc;
+    }
+    footer {
+      margin-top: auto;
+      padding-top: 2rem;
+      font-size: 0.8rem;
+      color: #555;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="logoBROMA.png" alt="BROMA" class="logo">
+    </a>
+    <p class="h2">Shows de comedia por todo México</p>
+    <p class="tagline">¿Nos permites esta risa?</p>
+  </header>
+
+  <main class="container">
+    <!-- Sección de Open Mic con espacio para Flyer -->
+    <section class="card">
+      <!-- Aquí colocas la imagen del flyer del evento -->
+      <img src="flyerEPICA.png" alt="Flyer Open Mic Aguascalientes" class="flyer">
+      
+      <h2>Miércoles de Open Mic</h2>
+      <p>Elenco alternante — Entrada libre</p>
+      <p><small>Épica; General Ignacio Allende 333, Barrio de San Marcos, Aguascalientes</small></p>
+      <a href="https://ig.me/m/somosbroma" target="_blank" class="btn">¡Reserva gratis!</a>
+    </section>
+
+    <main class="container">
+    <section class="card">
+      <!-- Aquí colocas la imagen del flyer del evento -->
+      <img src="edgarTERCERA.jpg" alt="Edgar Zamorano en la Tercera" class="flyer">
+      
+      <h2>Maltrip en La Tercera</h2>
+      <p>Edgar Zamorano — Donación a su discresión para salvar a mi perrita la Gordis.</p>
+      <p><small>La Tercera; Gral Álvaro Obregón 355, Zona centro, Aguascalientes</small></p>
+      <a href="https://wa.me/5214491142007" target="_blank" class="btn">¡Reserva a este WhatsApp!</a>
+    </section>
+
+    <section class="card">
+      <img src="proximoSHOW.jpg" alt="se vienen mas shows de BROMA" class="flyer">
+      <h2>Próximos Shows</h2>
+      <p>Siempre tenemos nuevos shows de stand up por confirmar — Entradas disponibles pronto.</p>
+      <a href="https://instagram.com/somosbroma" class="btn">Siguenos y no te pierdas ninguno</a>
+    </section>
+
+    <!-- Sección de Clips -->
+    <section class="card">
+      <h2>Clips</h2>
+      <p>Mira alguno de nuestros clips aquí.</p>
+      <a href="https://instagram.com/somosbroma" class="btn">Ver Videos</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; BROMA, 2026. Todos los derechos reservados. Ahora reserven boletos. (Gracias :))
+  </footer>
+
+</body>
+</html>
